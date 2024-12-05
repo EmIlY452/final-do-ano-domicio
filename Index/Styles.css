@@ -1,0 +1,112 @@
+/* Definindo as cores principais */
+:root {
+    --cor-primaria: #3498db; /* Azul */
+    --cor-secundaria: #2ecc71; /* Verde */
+    --cor-fundo: #ecf0f1; /* Fundo claro */
+    --cor-texto: #2c3e50; /* Texto escuro */
+}
+
+/* Resetando as margens e o padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+/* Estilo do header */
+header {
+    background-color: var(--cor-primaria);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo das seções principais */
+main {
+    padding: 20px;
+    margin: 20px;
+}
+
+main section {
+    margin-bottom: 20px;
+}
+
+main h2 {
+    font-size: 1.8em;
+    color: var(--cor-primaria);
+}
+
+main p, main ul {
+    font-size: 1.2em;
+}
+
+/* Estilo do rodapé */
+footer {
+    text-align: center;
+    background-color: var(--cor-primaria);
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+```
+
+### Explicação dos estilos:
+
+1. **Cores e variáveis**:  
+   Usei variáveis CSS (`:root`) para armazenar as cores principais, o que facilita a manutenção e mudança de cores ao longo do código.
+   
+2. **Reset de margens e paddings**:  
+   O `*` no CSS reseta as margens e o preenchimento padrão de todos os elementos, garantindo que você tenha controle total sobre o layout.
+
+3. **Estilos do corpo**:  
+   Defini a fonte, a cor de fundo e a cor do texto. O `line-height` foi ajustado para melhorar a leitura.
+
+4. **Estilos do cabeçalho e navegação**:  
+   O cabeçalho tem uma cor de fundo e a navegação é feita com uma lista não ordenada. Usei `inline` para exibir os itens da lista em linha, e adicionei um efeito de `hover` para os links.
+
+5. **Estilos de seções**:  
+   As seções têm um espaço interno (`padding`) e as cabeçalhos (`h2`) têm uma cor diferente para destacar os títulos.
+
+6. **Rodapé**:  
+   O rodapé está fixo na parte inferior da página, com um fundo colorido e o texto alinhado no centro.
+
+### Como testar:
+1. Crie dois arquivos: `index.html` (arquivo HTML) e `style.css` (arquivo CSS).
+2. Coloque o código HTML no arquivo `index.html` e o CSS no arquivo `style.css`.
+3. Abra o arquivo `index.html` em um navegador para visualizar o site.
+
+Isso é apenas um ponto de partida. Com o CSS, você pode criar layouts complexos, adicionar animações, transições, e muito mais! Se você tiver dúvidas ou quiser aprimorar algo específico, é só me avisar. 😊
